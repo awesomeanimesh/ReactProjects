@@ -1,10 +1,10 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import Calculator from "./components/calculator.js";
 import './index.css';
 
 
-ReactDOM.render(<Calculator />, document.getElementById('root'));
+//ReactDOM.render(<Calculator />, document.getElementById('root'));
 
 // import React from 'react';
 // import ReactDOM from 'react-dom/client';
@@ -12,12 +12,12 @@ ReactDOM.render(<Calculator />, document.getElementById('root'));
 // import App from './App';
 // import reportWebVitals from './reportWebVitals';
 
-//  const root = ReactDOM.createRoot(document.getElementById('root'));
-//  root.render(
-//    <React.StrictMode>
-//      <Calculator />
-//    </React.StrictMode>
-//  );
+ const root = ReactDOM.createRoot(document.getElementById('root'));
+  root.render(
+    <React.StrictMode>
+      <Calculator />
+    </React.StrictMode>
+  );
 
 // // If you want to start measuring performance in your app, pass a function
 // // to log results (for example: reportWebVitals(console.log))
