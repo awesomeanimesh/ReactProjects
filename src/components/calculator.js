@@ -4,6 +4,7 @@ import OutputScreen from './outputScreen.js';
 import Button from './button.js';
 
 
+
 class Calculator extends React.Component {
   constructor() {
     super();
@@ -20,11 +21,12 @@ class Calculator extends React.Component {
     {
         return(
             <div className="frame">
-            <CalculatorTitle value="My Calculator"/>
+             <CalculatorTitle value="My Calculator"/> 
             <div className="mainCalc">
             <OutputScreen answer= {this.state.answer} question={this.state.question}/>
             <div className="button-row">
-              <Button label={'Clear'} handleClick = {this.handleClick}/>
+               <Button aria-label="ClearButton" label={'Clear'} handleClick = {this.handleClick}/>
+              
               <Button label={'Delete'} handleClick = {this.handleClick}/>
               <Button label={'.'} handleClick = {this.handleClick}/>
               <Button label={'/'} handleClick = {this.handleClick}/>
